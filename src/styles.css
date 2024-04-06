@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "TF2Build";
+    src: url(./tf2build.ttf);
+}
+
 :root{
     font-size: 16px;
 }
@@ -8,6 +13,14 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: "TF2Build";
+    font-size: 3rem;
+    color: red;
 }
 
 header>nav{
@@ -34,4 +47,15 @@ nav>button{
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
+    gap: 10px;
+}
+
+img.wide{
+    width: 40vw;
+    height: auto;
+}
+
+img.small{
+    width: 20vw;
+    height: auto;
 }

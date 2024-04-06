@@ -1,12 +1,14 @@
+import {makeDiv, makeImage} from "./makeElements";
+import pastaImage from "./burning_pasta.png";
+
 const writeMenuContent = (parentDiv) => {
     parentDiv.replaceChildren();
-    const div1 = document.createElement("div");
-    div1.textContent = "menu menu";
-    parentDiv.appendChild(div1);
-
-    const div2 = document.createElement("div");
-    div2.textContent = "mama mia pizza";
-    parentDiv.appendChild(div2);
+    makeImage(parentDiv, pastaImage, "small");
+    makeDiv(parentDiv, "All our dishes roasted over good fire!");
+    makeDiv(parentDiv, "- Oven cooked sashimi -");
+    makeDiv(parentDiv, "- Burning pineapple pizza (authentic hawaiian volcano heat) -");
+    makeDiv(parentDiv, "- Roasted ice cream sundae -");
+    makeDiv(parentDiv, "- Refridgerator curry -");
 }
 
 export default writeMenuContent;
